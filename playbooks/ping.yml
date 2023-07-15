@@ -1,2 +1,7 @@
-- ping:
-    data: crash
+---
+
+- name: check os version
+  hosts: all
+  tasks:
+    - shell:
+       cmd: cat /etc/redhat-release
